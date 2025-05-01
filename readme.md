@@ -52,7 +52,7 @@ docker run -p 6333:6333 qdrant/qdrant
 Run the script to generate embeddings, store them in Qdrant, and evaluate the performance:
 
 ```bash
-python rag_embedding_comparison.py
+python RAG.py
 ```
 
 ## Customization
@@ -64,3 +64,9 @@ To use your own dataset:
 ## Output
 
 The script outputs precision and Mean Reciprocal Rank (MRR) metrics for each embedding method, allowing you to compare their effectiveness for your specific RAG application.
+
+## Further testing
+
+This basic script was extended to be tested on a larger dataset (the SQuAD dataset) to test it on a practical application 
+to run this extended script you must also pip install requests and tqdm
+after which you can run the extended script "RAG_SQuAD.py" the same way
